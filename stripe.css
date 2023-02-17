@@ -5,10 +5,14 @@
 }
 .topBody{
     /* padding-top: 15px; */
-    background-image: linear-gradient(to bottom right, rgb(201, 63, 182) 50%, white 50%); 
+    background-image: linear-gradient(to bottom right, rgb(201, 63, 182) 50%, white 50%);
+    animation-name: animation-body; 
     background-repeat: no-repeat;
     width: auto;
     padding-left: 90px;
+}
+@keyframes animation-body{
+
 }
 
 .headerStripe{
@@ -35,11 +39,7 @@
     font-size: 20px;
     margin-left: 10px;
   }
-  .content_b{
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 10px;
-  }
+  
 }
 
 .navbar a {
@@ -175,12 +175,22 @@
   font-size: 25px;
   background-color:rgba(240, 240, 240, 0.705);
   padding-top: 100px;
-  width: 100%;
+  
+  /* width: 100%; */
  }
  .leftRight{
   display: flex;
   flex-direction: row;
+  position: relative;
+  text-decoration: none;
   
+ }
+ .leftRight a{
+  text-decoration: none;
+  color: blue;
+ }
+ .leftRight a:hover{
+  color: black;
  }
  .stripePleft{
   width: 550px;
@@ -198,4 +208,17 @@
   .stripePright{
     margin-left: 0;
   }
+}
+.btn3{
+  background-color: rgb(80, 80, 233);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+
+}
+.btn3:hover{
+  background-color: black;
 }
