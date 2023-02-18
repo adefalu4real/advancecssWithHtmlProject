@@ -5,85 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-/* .cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-} */
-
-
-.formPage{
-  width: 600px;
-  justify-content: center;
-}
-.container {
-  padding: 16px;
-  width: 500px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-    </style>
+    <link rel="stylesheet" href="Signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="signForm">
+    <div class="signForm"> 
         <div class="formPage">
-            <form action="">
+          <div><h2>stripe</h2></div>
+           <div> <form action="">
                 <div class="container">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
+                  <h2 style="margin-left: 10px;">Sign in to your account</h2>
+                    <label for="mail" style="margin-left: 10px;"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="mail" required>
                 
-                    <label for="psw"><b>Password</b></label>
+                    <div class="psw">
+                      <label for="psw"><b>Password</b></label>
+                      <a href="#" class="forgot">Forgot password?</a></div> 
                     <input type="password" placeholder="Enter Password" name="psw" required>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
-                    <button type="submit">Login</button>
-                    <label>
-                      <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                  </div>
-                
-
-                  </div>
-            </form>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Stay signed in for a week
+                  </label>
+                    <button class="btn1" type="submit">Continue</button>
+                    <a href="#" class="sso">Use single sign-on (SSO) instead</a>
+                </form>
+           </div>
+                <div class="Uparagraph1">
+                  <p>Don't have an account? Sign up <a href="">sing up</a></p>
+                </div>
+                <div class="Uparagraph">
+                  <button type="button" class="securityBtn">security tip</button>
+                  <p>Add multiple authentication factors in case you lose one.<br>
+                    For example, adding both a security key and your phone means <br> you can 
+                    still sign in if you lose your phone.</p>
+                </div>
+                <div class="Lparagraph">
+                  <div style="margin-right: 10px;">Is this app helpful</div>
+                  <span>
+                    <button class="submit" type="submit">Yes</button>
+                    <button class="submit" type="submit">No</button>
+                  </span>
+                </div>
+              </div>
         </div>
     </div>
 </body>

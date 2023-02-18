@@ -1,158 +1,157 @@
-.main{
-    height: 100%;
-    width: 100%;
-   
+.main {
+  height: 100%;
+  width: 100%;
+  font-family: "Squada One", cursive;
 }
-.topBody{
-    /* padding-top: 15px; */
-    background-image: linear-gradient(to bottom right, rgb(201, 63, 182) 50%, white 50%);
-    animation-name: animation-body; 
-    background-repeat: no-repeat;
-    width: auto;
-    padding-left: 90px;
+.topBody {
+  /* padding-top: 15px; */
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(201, 63, 182) 50%,
+    white 50%
+  );
+  animation-name: animation-body;
+  background-repeat: no-repeat;
+  width: auto;
+  padding-left: 90px;
 }
-@keyframes animation-body{
+@keyframes animation-body {
+}
 
-}
-
-.headerStripe{
-    height: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    /* background-color: rgb(248, 250, 248); */ 
-    
+.headerStripe {
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  /* background-color: rgb(248, 250, 248); */
 }
 @media only screen and (max-width: 600px) {
   .headerStripe {
     flex-direction: column;
   }
-  .contentImg{
+  .contentImg {
     display: none;
   }
-  .clients{
+  .clients {
     flex-direction: row;
   }
-  .content_a{
+  .content_a {
     font-size: 20px;
     margin-left: 10px;
   }
-  
 }
 
 .navbar a {
-    float: left;
-    font-size: 16px;
-    color: rgb(14, 13, 13);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 30px;
-    /* justify-content: center; */
-    
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: rgb(14, 10, 10);
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin-left: 30px;
-    justify-content: center;
-    text-decoration: none;
-    
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(32, 124, 47);
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-    margin-right: 5px;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .content{
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    justify-content: space-between;
-    margin-left: 140px;
-    font-size: 50px;
-  }
-  .content_a{
-    margin-top: 30px; 
-  }
-  .content_b{
-    font-size: 20px;
-     width: 500px; 
-     margin-top: 10px; 
-     margin-bottom: 10px;
-  }
-  .startNow{
-    margin-top: 10px;
-  }
- 
- .btn {
+  float: left;
+  font-size: 16px;
+  color: rgb(14, 13, 13);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 30px;
+  /* justify-content: center; */
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(14, 10, 10);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-left: 30px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(32, 124, 47);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  margin-right: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-content: space-between;
+  margin-left: 140px;
+  font-size: 50px;
+}
+.content_a {
+  margin-top: 30px;
+}
+.content_b {
+  font-size: 20px;
+  width: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.startNow {
+  margin-top: 10px;
+}
+
+.btn {
   padding: 8px 16px;
   background-color: black;
   color: white;
   border-radius: 20px;
   font-weight: bold;
   border: 0px;
- }
- .btn:hover{
+}
+.btn:hover {
   background-color: #c9c5c5;
   font-weight: bold;
- }
- .nowl{
+}
+.nowl {
   font-size: 17px;
   color: black;
   border-bottom: 0px;
   text-decoration: none;
- }
- .nowl:hover{
+}
+.nowl:hover {
   color: #b9b5b5;
   font-weight: bold;
- }
- .clients{
+}
+.clients {
   display: flex;
   flex-direction: column;
-
- }
- .client_1{
+}
+.client_1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -160,56 +159,55 @@
   margin-right: 140px;
   margin-left: 140px;
   margin-bottom: 40px;
- }
- .client2{
+}
+.client2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 70pxpx;
   margin-right: 140px;
   margin-left: 140px;
- }
- .stripeParagraph{
+}
+.stripeParagraph {
   margin-top: 50px;
   padding-left: 250px;
   font-size: 25px;
-  background-color:rgba(240, 240, 240, 0.705);
+  background-color: rgba(240, 240, 240, 0.705);
   padding-top: 100px;
-  
+
   /* width: 100%; */
- }
- .leftRight{
+}
+.leftRight {
   display: flex;
   flex-direction: row;
   position: relative;
   text-decoration: none;
-  
- }
- .leftRight a{
+}
+.leftRight a {
   text-decoration: none;
   color: blue;
- }
- .leftRight a:hover{
+}
+.leftRight a:hover {
   color: black;
- }
- .stripePleft{
+}
+.stripePleft {
   width: 550px;
   font-size: 25px;
- }
- .stripePright{
+}
+.stripePright {
   width: 550px;
   font-size: 25px;
   margin-left: 60px;
- }
- @media only screen and (max-width: 600px) {
-  .leftRight{
+}
+@media only screen and (max-width: 600px) {
+  .leftRight {
     flex-direction: column;
   }
-  .stripePright{
+  .stripePright {
     margin-left: 0;
   }
 }
-.btn3{
+.btn3 {
   background-color: rgb(80, 80, 233);
   color: white;
   padding: 10px 20px;
@@ -217,8 +215,7 @@
   font-size: 16px;
   font-weight: bold;
   border: 0;
-
 }
-.btn3:hover{
+.btn3:hover {
   background-color: black;
 }

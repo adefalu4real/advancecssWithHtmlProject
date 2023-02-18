@@ -1,0 +1,138 @@
+body {
+  font-family: "Squada One", cursive;
+}
+
+.signForm {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(181, 208, 212, 0.123) 50%,
+    white 50%
+  );
+  padding-top: 30px;
+  position: relative;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: block;
+  border: 1px solid #a8bbc3;
+  box-shadow: #6a98e1;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.psw {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 60px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.forgot {
+  text-decoration: none;
+  color: #573fb7;
+}
+.forgot:hover {
+  color: black;
+}
+input[type="checkbox"] {
+  display: inline-flex;
+}
+form {
+  border: 0px solid;
+  background-color: white;
+  box-shadow: black;
+  padding: 20px 10px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px 4px rgb(153, 183, 218);
+  width: 500px;
+  height: 500px;
+}
+
+.btn1 {
+  background-color: #573fb7;
+  color: white;
+  padding: 15px 10px;
+  margin: 40px 5px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  border-radius: 4px;
+}
+
+.btn1:hover {
+  opacity: 0.8;
+}
+
+.formPage {
+  width: 600px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  /* padding-top: 30px; */
+}
+.container {
+  padding: 10px 20px;
+  width: 500px;
+  /* background-color: white; */
+}
+
+/* .psw {
+  float: right;
+  padding-top: 16px;
+ 
+} */
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}
+.sso {
+  margin-left: 120px;
+  text-decoration: none;
+  color: #755dd6;
+}
+.sso:hover {
+  color: black;
+}
+.Uparagraph1 {
+  margin-top: 0px;
+  margin-bottom: -20px;
+  padding-left: 10px;
+}
+.Uparagraph {
+  margin-top: 0px;
+  padding-left: 10px;
+}
+.securityBtn {
+  background-color: #a8bbc3;
+  width: 80px;
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border: 0px;
+}
+.submit {
+  width: 40px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: black;
+}
+.Lparagraph {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
