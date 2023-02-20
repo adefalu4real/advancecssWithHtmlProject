@@ -3,13 +3,22 @@
   width: 100%;
   font-family: "Squada One", cursive;
 }
+.signPage {
+  border: 1px solid;
+  padding: 10px 20px;
+  background-color: rgb(194, 189, 189);
+  border-radius: 20px;
+  text-decoration: none;
+  opacity: 0.5;
+  color: white;
+}
+.signPage:hover {
+  color: rgb(33, 86, 113);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .topBody {
   /* padding-top: 15px; */
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(201, 63, 182) 50%,
-    white 50%
-  );
+  background-image: linear-gradient(168deg, rgb(201, 63, 182) 50%, white 50%);
   animation-name: animation-body;
   background-repeat: no-repeat;
   width: auto;
@@ -107,7 +116,7 @@
 .content {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: 90px;
   justify-content: space-between;
   margin-left: 140px;
   font-size: 50px;
