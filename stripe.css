@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .main {
   height: 100%;
   width: 100%;
@@ -36,19 +39,44 @@
   margin: 0;
   /* background-color: rgb(248, 250, 248); */
 }
+
 @media only screen and (max-width: 600px) {
-  .headerStripe {
-    flex-direction: column;
+  .content_a {
+    /* display: flex;
+    flex-direction: column; */
+    font-size: 15px;
+    padding: 2px;
+    margin-left: -220px;
+    width: 200px;
+  }
+  .content_b {
+    /* display: flex;
+    flex-direction: column; */
+    font-size: 5px;
+    /* padding-left: 2px;
+    margin-left: 0px;
+    width: 400px; */
   }
   .contentImg {
     display: none;
   }
-  .clients {
-    flex-direction: row;
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    padding: 2px;
   }
-  .content_a {
-    font-size: 20px;
-    margin-left: 10px;
+  .topBody {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px; */
+  }
+  .headerStripe {
+    display: flex;
+    flex-direction: column;
+    padding-left: -50px;
+    font-size: 12px;
+    margin-left: -50px;
   }
 }
 
@@ -118,8 +146,9 @@
   flex-direction: row;
   margin-top: 90px;
   justify-content: space-between;
-  margin-left: 140px;
-  font-size: 50px;
+  /* margin-left: 140px; */
+  padding-left: 150px;
+  font-size: 40px;
 }
 .content_a {
   margin-top: 30px;
@@ -167,13 +196,13 @@
   margin-top: 100px;
   margin-right: 140px;
   margin-left: 140px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 .client2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 70pxpx;
+  margin-top: 100px;
   margin-right: 140px;
   margin-left: 140px;
 }
@@ -208,12 +237,36 @@
   font-size: 25px;
   margin-left: 60px;
 }
+.aFullyIn {
+  width: 500px;
+}
 @media only screen and (max-width: 600px) {
-  .leftRight {
-    flex-direction: column;
+  .clients {
+    flex-direction: row;
+    padding-left: -15px;
   }
-  .stripePright {
-    margin-left: 0;
+  .client2 {
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: -70px;
+  }
+  .client_1 {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .startNow {
+    width: 210px;
+  }
+  .stripeParagraph {
+    margin-left: -200px;
+    padding-left: -200px;
+  }
+  .aFullyIn {
+    width: 200px;
+    font-size: 20px;
   }
 }
 .btn3 {
@@ -224,7 +277,244 @@
   font-size: 16px;
   font-weight: bold;
   border: 0;
+  margin-bottom: 40px;
 }
 .btn3:hover {
   background-color: black;
+}
+.animationPage {
+  background-image: linear-gradient(
+    168deg,
+    rgb(238, 240, 241) 50%,
+    rgb(238, 240, 244) 50%
+  );
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.ATM {
+  width: 350px;
+  height: 210px;
+  background-color: aquamarine;
+  animation-fill-mode: both;
+  border-radius: 10px;
+  margin-right: 40px;
+  /* margin-top: 50px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+.atmSlack {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 140px;
+}
+.atmName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.slackForm {
+  width: 500px;
+  height: 400px;
+  background-image: linear-gradient(
+    168deg,
+    rgb(65, 6, 80) 50%,
+    rgb(252, 252, 254) 50%
+  );
+  border-radius: 10px;
+}
+.sImg {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 50px;
+  border-radius: 10px;
+}
+.phone {
+  margin-left: 40px;
+  margin-top: -50px;
+  border-radius: 10px;
+}
+.up {
+  display: flex;
+  flex-direction: row;
+}
+.down {
+  display: flex;
+  flex-direction: row;
+  padding-left: 150px;
+}
+.imgDown {
+  margin-top: -130px;
+  margin-left: 90px;
+  margin-right: 28px;
+}
+.imgDown2 {
+  margin-top: 10px;
+}
+.downContent {
+  background-image: linear-gradient(
+    168deg,
+    rgb(3, 15, 68) 50%,
+    rgb(3, 15, 68) 50%
+  );
+  padding-left: 170px;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: row;
+}
+.downContent1 {
+  width: 320px;
+  margin-right: 100px;
+}
+.downContent1_a {
+  color: aqua;
+}
+.downContent1_b {
+  color: white;
+}
+.downContent1_c {
+  color: #a3abaf;
+  margin-top: 15px;
+}
+.downContentbtn {
+  border-radius: 20px;
+  background-color: aqua;
+  padding: 7px 15px;
+  margin-top: 20px;
+}
+.videoAnimated {
+  width: 600px;
+  height: 500px;
+}
+.downContent2 {
+}
+@media only screen and (max-width: 600px) {
+  .up {
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding-left: -10px;
+    margin-top: -30px;
+  }
+  .ATM {
+    margin-left: -60px;
+    margin-top: -30px;
+  }
+  .slackForm {
+    margin-left: -130px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  .animationPage {
+    flex-direction: column;
+  }
+  .atmSlack {
+    flex-direction: column;
+  }
+  .phone {
+    margin-left: 100px;
+  }
+  .down {
+    flex-direction: column;
+    margin-left: -90px;
+  }
+  .fraudRisk {
+    width: 500px;
+    height: 350px;
+  }
+  .imgDown {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .imgDown2 {
+    margin-left: -50px;
+  }
+  .downContent {
+    flex-direction: column;
+  }
+  .downContent1 {
+    width: 300px;
+    margin-left: -80px;
+  }
+  .videoAnimated {
+    width: 400px;
+    height: 400px;
+    margin-left: -80px;
+    margin-top: 20px;
+  }
+}
+.animationTerminal {
+  background-image: linear-gradient(
+    175deg,
+    rgb(3, 15, 68) 50%,
+    rgb(237, 239, 243) 50%
+  );
+  display: flex;
+  flex-direction: row;
+  padding-left: 140px;
+  padding-top: 200px;
+  padding-bottom: 700px;
+}
+.smallBox {
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
+  border-radius: 10px;
+  margin-left: 15px;
+  box-shadow: 5px 5px 5px 5px rgb(48, 78, 78);
+}
+.smallBoxContent {
+  width: 200px;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.smallCircle {
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
+  border-radius: 25px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 5px 5px rgb(67, 100, 100);
+}
+.animationTerminal2 {
+  margin-left: 70px;
+}
+.animationTerminal3 {
+  margin-left: 70px;
+}
+.animationTerminal4 {
+  margin-left: 70px;
+}
+.technologyFirst {
+  margin-top: -400px;
+  padding-left: 150px;
+}
+.technologyFirst_a {
+  width: 500px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.technologyFirst_b {
+  display: flex;
+  flex-direction: row;
+}
+.technologyFirst1 {
+  margin-right: 70px;
+}
+.technologyFirst2 {
+  margin-right: 70px;
+}
+.technologyFirst3 {
+  margin-right: 70px;
+}
+.techLink {
+  text-decoration: none;
+  color: rgb(29, 109, 231);
+}
+.techLink:hover {
+  color: black;
 }
